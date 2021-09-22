@@ -7,6 +7,7 @@ function Time() {
 
   return (
     <div className={myClassName}>
+      <span>🕖</span>{" "}
       {`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`}
     </div>
   );

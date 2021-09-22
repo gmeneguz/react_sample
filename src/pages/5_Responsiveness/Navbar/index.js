@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <Container>
-      <Logo>Logo</Logo>
+      <Logo></Logo>
       <RightSide>
         <NavbarItems showResponsiveMenu={isMenuOpen}>
           <Item>Início</Item>

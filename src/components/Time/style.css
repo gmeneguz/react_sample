@@ -1,4 +1,8 @@
 .my_class {
-  background-color: lightpink;
+  background-color: none;
   font-size: 44px;
+  text-align: center;
+  border: 2px solid lightpink;
+  border-radius: 10px;
+  padding: 8px;
 }

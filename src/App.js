@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import State from "./pages/2_State";
+import JSX from "./pages/1_JSX";
+import Home from "./pages/home";
+import Props from "./pages/3_Props";
+import Effects from "./pages/4_Effects";
+import Responsiveness from "./pages/5_Responsiveness";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+          width: "100vw",
+        }}
+      >
+        <Switch>
+          <Route path="/JSX">
+            <JSX />
+          </Route>
+          <Route path="/state">
+            <State />
+          </Route>
+          <Route path="/props">
+            <Props />
+          </Route>
+          <Route path="/effects">
+            <Effects />
+          </Route>
+          <Route path="/responsividade">
+            <Responsiveness />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

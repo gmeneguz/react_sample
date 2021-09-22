@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const ContentOne = styled.div`
   display: flex;
   flex: 1;
-  max-width: 2024px;
+  max-width: 1024px;
   margin: 0 auto;
   flex-direction: row;
   justify-content: center;
@@ -22,7 +22,6 @@ export const ContentOne = styled.div`
   border-bottom: 1px solid #fff;
 
   .left {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +67,7 @@ export const ContentOne = styled.div`
 export const ContentTwo = styled.div`
   display: flex;
   flex: 1;
-  max-width: 2024px;
+  max-width: 1024px;
   margin: 0 auto;
   flex-direction: row;
   justify-content: center;
@@ -76,7 +75,6 @@ export const ContentTwo = styled.div`
   border-bottom: 1px solid #fff;
 
   .left {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
